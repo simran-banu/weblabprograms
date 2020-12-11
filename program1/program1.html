@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <style>
+        body{
+            background-image: url("img/calci.jpg");
+            background-size:cover;
+        }
+        .calc{
+            margin-left: 550px;
+            margin-top: 50px;
+        }
+     
+        .calc input[type="button"]{
+            width:99.5px;
+            height: 80px;
+            font-size: 30px;
+            background-color: rgb(17, 156, 221);
+            color: white;
+        }
+        .aa input[type="button"]{
+            width:410px;
+            height: 80px;
+            font-size: 30px;
+            background-color: rgb(243, 67, 155);
+            color: white;
+        }
+    
+        p{
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            font-weight: 30px;
+            margin-left: 550px;
+            margin-top: 30px;
+            background-color: rgb(255, 0, 0);
+            width: 365px;
+            padding: 20px;
+            text-align: center;
+        }
+        .calc input[type="text"]
+        {
+           width: 410px;
+           height: 80px;
+           font-size: 30px; 
+        }
+        </style>
+
+    <body>
+        <div>
+            <p> <b>Simple Calculator</b></p>
+        </div>
+    
+        <div class="calc">
+            <table>
+
+            
+            <form name="forms">
+               <tr>
+                   <td><input type="text" name="exp" id="inp"></td>
+                   </tr>
+
+               <tr>
+                   <td class="aa" ><input type="button" value="AC"   onclick=" document.getElementById('inp').value=''">
+                   </td>
+    
+                </tr>
+
+                 <tr>
+
+            <td><input type="button" value="7" onclick=" document.getElementById('inp').value+='7'">
+                <input type="button" value="8" onclick=" document.getElementById('inp').value+='8'">
+                    <input type="button" value="9" onclick=" document.getElementById('inp').value+='9'">
+                        <input type="button" value="+" onclick=" document.getElementById('inp').value+='+'"></td>
+                </tr>
+                <tr>
+              <td><input type="button" value="4" onclick=" document.getElementById('inp').value+='4'">
+               <input type="button" value="5" onclick=" document.getElementById('inp').value+='5'">
+                <input type="button" value="6" onclick=" document.getElementById('inp').value+='6'">
+                    <input type="button" value="-" onclick=" document.getElementById('inp').value+='-'"></td>
+                </tr>
+                <tr>
+               <td><input type="button" value="1" onclick=" document.getElementById('inp').value+='1'">
+                 <input type="button" value="2" onclick=" document.getElementById('inp').value+='2'">
+               <input type="button" value="3" onclick=" document.getElementById('inp').value+='3'">
+                   <input type="button" value="*" onclick=" document.getElementById('inp').value+='*'"></td>
+                </tr>
+
+               <tr>
+              <td>
+                <input type="button" value="0" onclick=" document.getElementById('inp').value+='0'">
+                <input type="button" value="." onclick=" document.getElementById('inp').value+='.'">
+                    <input type="button" value="=" onclick=" document.getElementById('inp').value=eval(document.getElementById('inp').value)">
+                        <input type="button" value="/" onclick=" document.getElementById('inp').value+='/'"></td>
+                </tr>
+            
+           </form>
+        </table>
+        </div>
+    </body>
+</html>
