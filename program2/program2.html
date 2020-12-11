@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<style> table,tr,
+    td
+    {
+    border: solid black;
+    width: 35%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color:lightblue;
+    }
+    table { margin: auto;
+    
+     }
+     body{
+         background-color: pink;
+     }
+    </style>
+    
+<body>
+<table>
+    <h2 style="text-align:center;">Numbers from 0 to 10 with their sqaures and cubes</h2>
+<tr><td>number</td><td>square</td><td>cube</td></tr>
+<script type="text/javascript">
+for(var n=0; n<=10; n++)
+{
+document.write( "<tr><td>" + n + "</td><td>" + n*n + "</td><td>" + n*n*n
++ "</td></tr>" ) ;
+}
+</script>
+</table>
+</body>
+</html>
